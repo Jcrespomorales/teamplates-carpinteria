@@ -1,0 +1,87 @@
+.login-main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 4rem var(--spacing-md) var(--spacing-lg);
+    background:
+        linear-gradient(rgba(74, 52, 40, 0.38), rgba(74, 52, 40, 0.38)),
+        url("img/madera1.png") center / cover no-repeat;
+}
+
+.login-card {
+    width: min(100%, 420px);
+    padding: clamp(1.5rem, 2vw, 2.75rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-medium);
+    height: 80vh;
+}
+
+.login-card h1 {
+    margin: 0;
+    color: var(--color-primary);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.login-intro {
+    margin:0.3rem;
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.campo-login {
+    display: grid;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+}
+
+.campo-login label {
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.campo-login input {
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0.5rem var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.campo-login input:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(200, 154, 99, 0.25);
+}
+
+.btn-login {
+    width: 100%;
+    min-height: 3rem;
+    margin-top: var(--spacing-xs);
+    border: 0;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-secondary);
+}
+
+.btn-login:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}

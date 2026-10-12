@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <img src="img/Logo_JACM recortado.png" alt="Logo">
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="contenedor-navegacion" id="menu-principal" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#servicios">Nuestros servicios</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="login.html">Login</a>
+            <a href="#registro">Regístrate</a>
+        </nav>
+    </header>
+    <main class="login-main">
+        <section class="login-card" aria-labelledby="login-title">
+            <h1 id="login-title">Bienvenido</h1>
+            <p class="login-intro">Inicia sesión para continuar</p>
+            <form action="#" method="post">
+                <div class="campo-login">
+                    <label for="usuario">Usuario</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+                <div class="campo-login">
+                    <label for="contrasena">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+                <button class="btn-login" type="submit">Iniciar sesión</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla base del proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <img src="img/Logo_JACM recortado.png" alt="Logo">
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="contenedor-navegacion" id="menu-principal" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="#servicios">Nuestros servicios</a>
+            <a href="catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+            <a href="login.html">Login</a>
+            <a href="registro.html">Regístrate</a>
+        </nav>
+    </header>
+    <div class="contenedor-hero" id="inicio">
+        <p>Carpintería a medida
+            <span>Diseños exclusivos y fabricación artesanal</span>
+        </p>
+        <button class="btn-principal" id="btn-pedir-presupuesto">Pida su presupuesto</button>
+    </div>
+
+    <section class="seccion-servicios" id="servicios">
+        <h2>Nuestros servicios</h2>
+        <div class="contenedor-servicios">
+            <article class="card-servicio">
+                <img src="img/dormitorio1.png" alt="Dormitorio de madera a medida">
+                <h3>Dormitorios</h3>
+            </article>
+            <article class="card-servicio">
+                <img src="img/armario1.png" alt="Armario de madera a medida">
+                <h3>Armarios</h3>
+            </article>
+            <article class="card-servicio">
+                <img src="img/escritorio1.png" alt="Escritorio de madera a medida">
+                <h3>Escritorios</h3>
+            </article>
+            <article class="card-servicio">
+                <img src="img/cocina1.png" alt="Cocina de madera a medida">
+                <h3>Cocinas</h3>
+            </article>
+            <article class="card-servicio">
+                <img src="img/estanteria1.png" alt="Estantería de madera a medida">
+                <h3>Estanterías</h3>
+            </article>
+            <article class="card-servicio">
+                <img src="img/pergola1.png" alt="Pérgola de madera a medida">
+                <h3>Pérgolas</h3>
+            </article>
+        </div>
+    </section>
+
+    <footer class="pie-pagina" id="contacto">
+        <div class="pie-pagina-contenido">
+            <section class="pie-pagina-marca" aria-label="JACM Carpintería a medida">
+                <a class="pie-pagina-logo" href="#inicio" aria-label="JACM, volver al inicio">
+                    <img src="img/Logo_JACM recortado.png" alt="JACM">
+                </a>
+                <h2 class="pie-pagina-nombre">JACM</h2>
+                <p>Diseños exclusivos y fabricación artesanal para crear espacios a tu medida.</p>
+            </section>
+
+            <nav class="pie-pagina-enlaces" aria-label="Enlaces del pie de página">
+                <h2>Explora</h2>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Nuestros servicios</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+
+            <section class="pie-pagina-contacto" aria-labelledby="pie-pagina-contacto-titulo">
+                <h2 id="pie-pagina-contacto-titulo">¿Tienes un proyecto en mente?</h2>
+                <p>Descubre nuestros servicios y encuentra inspiración para tu próximo espacio.</p>
+                <a href="#servicios">Conoce nuestros servicios</a>
+            </section>
+        </div>
+        <div class="pie-pagina-base">
+            <p>© JACM · Carpintería a medida</p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
