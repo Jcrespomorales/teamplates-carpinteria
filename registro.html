@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | JACM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <img src="img/Logo_JACM recortado.png" alt="Logo">
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="contenedor-navegacion" id="menu-principal" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#servicios">Nuestros servicios</a>
+            <a href="index.html#contacto">Contacto</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+    <main class="registro-main">
+        <section class="registro-card" aria-labelledby="registro-titulo">
+            <h1 id="registro-titulo">Crea tu cuenta</h1>
+            <p>Regístrate para continuar</p>
+            <form action="#" method="post">
+                <div class="registro-campos">
+                    <div class="campo-registro">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+                    </div>
+                    <div class="campo-registro">
+                        <label for="apellidos">Apellidos</label>
+                        <input id="apellidos" name="apellidos" type="text" autocomplete="family-name" required>
+                    </div>
+                    <div class="campo-registro">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo-registro">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" autocomplete="tel" required>
+                    </div>
+                    <div class="campo-registro campo-registro-completo">
+                        <label for="contrasena">Contraseña</label>
+                        <input id="contrasena" name="contrasena" type="password" autocomplete="new-password" minlength="8" required>
+                    </div>
+                </div>
+                <button class="btn-registro" type="submit">Crear cuenta</button>
+            </form>
+            <p class="registro-login">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
